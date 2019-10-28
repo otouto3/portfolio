@@ -1,6 +1,6 @@
 <template>
   <div class="gradation">
-    <p class="flip">{{ msg }}</p>
+    <p class="fadeInDown flip">{{ msg }}</p>
   </div>
 </template>
 
@@ -74,6 +74,26 @@ p {
   backface-visibility: visible;
   -webkit-animation-name: flip;
   animation-name: flip;
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
 
