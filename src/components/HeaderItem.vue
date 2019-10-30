@@ -2,6 +2,7 @@
   <header id="header">
     <nav>
       <ul class="header-nav">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
         <li><router-link id="home-nav" to="/" exact>Home</router-link></li>
         <li><router-link id="about-nav" to="/about">About</router-link></li>
         <li><router-link id="works-nav" to="/works">Works</router-link></li>
@@ -27,7 +28,8 @@
   font-size: 1.25rem;
   list-style: none;
   width: 100%;
-  background-color: rgb(139, 139, 139);
+  height: $header-height_pc;
+  background-color: black;
   top: 0px;
   left: 0px;
   position: fixed;
@@ -35,40 +37,59 @@
 
   li {
     width: 100%;
-    //height: 100%;
     //margin-left: 36px;
-    border: 2px solid #555;
+    //border: 2px solid #555;
     display: block; //親要素と同じまでクリックの範囲を広げる
   }
 
   a {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
     display: block; //親要素と同じまでクリックの範囲を広げる
     text-decoration: none;
     text-align: center;
     color: white;
-  }
-
-  a:hover{
-  color:rgb(70, 241, 28)
+    font-family: "M PLUS 1p";
   }
 }
 
+//PC用
+@media screen and (min-width: 770px) { /*ウィンドウ幅が767px以上の場合に適用*/
+
+  a {
+    &:hover{
+      color:rgb(156, 160, 156)
+    }
+  }
+
+}
+
+
 /* タブレット */
-@media (max-width: 1250px) {
+@media screen and (max-width: 768px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
   a {
     width: 100%;
     height: $header-height_tablet;
     line-height: $header-height_tablet;
+
+    &:active {
+      color:rgb(156, 160, 156)
+    }
   }
 }
+
 /* スマートフォン */
-@media (max-width: 670px) {
-  a {
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+ a {
     width: 100%;
     height: $header-height_sp;
     line-height: $header-height_sp;
-  }
 
+    &:active {
+      color:rgb(156, 160, 156)
+    }
+  }
 }
 
 </style>
