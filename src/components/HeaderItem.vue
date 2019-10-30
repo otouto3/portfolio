@@ -44,7 +44,6 @@
 
   a {
     width: 100%;
-    padding-top: 10px;
     display: block; //親要素と同じまでクリックの範囲を広げる
     text-decoration: none;
     text-align: center;
@@ -57,6 +56,7 @@
 @media screen and (min-width: 770px) { /*ウィンドウ幅が767px以上の場合に適用*/
 
   a {
+    padding-top: 10px;
     height: 90%;
     &:hover{
       color:rgb(156, 160, 156)
@@ -70,7 +70,7 @@
 @media screen and (max-width: 768px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
   a {
     width: 100%;
-    height: $header-height_tablet;
+    height: 83%;
     line-height: $header-height_tablet;
 
     &:active {
@@ -84,6 +84,7 @@
  a {
     width: 100%;
     //height: $header-height_sp;
+    padding-top: 10px;
     height: 76%;
     line-height: $header-height_sp;
 
