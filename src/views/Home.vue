@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <GradationFont msg="Welcome to otouto's potofoliosyte"/>
+    <GradationFont msg="Welcome to otouto's Potofolio Syte"/>
   </div>
 </template>
 
