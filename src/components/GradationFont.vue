@@ -1,6 +1,6 @@
 <template>
   <div class="gradation">
-    <p class="fadeInDown flip">{{ msg }}</p>
+    <h1 class="fadeInDown flip">{{ msg }}</h1>
   </div>
 </template>
 
@@ -13,10 +13,13 @@ export default {
 }
 </script>
 
-<style scoped>
-p {
+<style lang="scss" scoped>
+
+@import '../assets/styles/_size.scss';
+
+h1 {
   color: #ACB6E5; /*非対応のブラウザでの文字色を設定 */
-  font: bold 8em / 1 Verdana, Helvetica, Arial, sans-serif;
+  font: bold 5em / 1 Verdana, Helvetica, Arial, sans-serif;
   background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8); /*背景色にグラデーションを指定*/
   -webkit-background-clip: text; /*テキストでくり抜く*/
   -webkit-text-fill-color: transparent; /*くり抜いた部分は背景を表示*/
@@ -41,6 +44,19 @@ p {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+
+/*スマートフォン*/
+@media (max-width: 670px) {
+  .box-wrapper {
+    td {
+      display: block;
+      font-size: 16px;
+      width: 100%;
+      padding: 5px 0;
+      border-bottom: none;
+    }
+  }
 }
 
 
