@@ -59,15 +59,15 @@ h1 {
 }
 
 //PC用
-@media screen and (min-width: 770px) { /*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 768px) { /*ウィンドウ幅が768px以上の場合に適用*/
   h1 {
-    font-size: 125px;
-    line-height:300px;
+    font-size: 100px;
+    line-height:200px;
   }
 }
 
 //タブレット用
-@media screen and (max-width: 768px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+@media screen and (max-width: 768px) { /*ウィンドウ幅が最大768pxまでの場合に適用*/
  h1 {
    font-size: 80px;
    line-height: 200px;
