@@ -61,8 +61,8 @@ h1 {
 //PC用
 @media screen and (min-width: 768px) { /*ウィンドウ幅が768px以上の場合に適用*/
   h1 {
-    font-size: 100px;
-    line-height:200px;
+    font-size: 96px;
+    line-height:180px;
   }
 }
 
