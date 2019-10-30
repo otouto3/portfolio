@@ -44,6 +44,7 @@
   a {
     display: block; //親要素と同じまでクリックの範囲を広げる
     text-decoration: none;
+    text-align: center;
     color: white;
   }
 
