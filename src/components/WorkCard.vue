@@ -43,6 +43,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           </li>
         </ul>
       </div>
+      <div class="work-link" v-for="(link, index) in item.links" :key=index>
+        <a :href="link.link">{{ link.link_name }}</a>
+      </div>
     </div>>
   </section>
 </template>
@@ -64,14 +67,13 @@ export default {
 .work-card {
   width: 300px;
   padding:  20px;
-  //margin: 20px;
   margin: 10px;
-  //margin: 23px;
   background: rgb(235, 233, 233);
   border-radius: 10px;
   box-shadow: 0 2px 5px #ccc;
   list-style: none;
   display: inline-block;
+  font-family: "M PLUS 1p";
 }
 
 .work-content {
@@ -80,9 +82,6 @@ export default {
     .work-img {
       margin-top: 3px;
       border-radius: 5px 5px 0 0;
-      //max-width: 100%;
-      //height: auto;
-
       width: 300px;
       height: 300px;
 
@@ -118,6 +117,23 @@ export default {
       }
     }
 
+    .work-link {
+
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding: 20px;
+
+      a {
+        text-decoration: none;
+        color: rgb(224, 93, 174);
+        margin: 0 10px;
+
+        &:hover {
+          color: #0090aa;
+        }
+      }
+    }
+
 }
 
 
@@ -144,38 +160,6 @@ export default {
 
 
 
-/*
-.card-link {
-  text-align: center;
-  border-top: 1px solid #eee;
-  padding: 20px;
-}
-.card-link a {
-  text-decoration: none;
-  color: #0bd;
-  margin: 0 10px;
-}
-.card-link a:hover {
-  color: #0090aa;
-}
-*/
-
-/*
-.work-card {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  gap: 15px;
-  justify-content: center;
-
-  .work-img {
-  }
-
-  .work-icon {
-      font-size: 4em;
-  }
-
-}
-*/
 
 
 </style>
