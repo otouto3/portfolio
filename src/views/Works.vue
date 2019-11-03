@@ -28,6 +28,12 @@ export default {
             { value: ["fab", "sass"] },
             { value: ["fab", "github"] },
           ],
+          links: [
+            {
+             link: 'https://github.com/otouto3/portfolio',
+             link_name: 'GitHub'
+            },
+          ],
         },
         {
           img_path: require('@/static/unity_game.png'),
@@ -36,7 +42,13 @@ export default {
           font_awesome: [],
           devicon: [
             { value: ["devicons devicons-unity_small"]},
-          ]
+          ],
+          links: [
+            {
+             link: '',
+             link_name: 'Blog'
+            },
+          ],
         },
       ]
     }
