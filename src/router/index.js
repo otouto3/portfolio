@@ -5,6 +5,7 @@ import About from '@/views/About.vue'
 import Works from '@/views/Works.vue'
 import Blog from '@/views/Blog.vue'
 import Contact from '@/views/Contact.vue'
+import NotFound from '@/views/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,10 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: Contact
+  },
+  { path: '*',
+    name: 'not_found',
+    component: NotFound,
   },
 ]
 
