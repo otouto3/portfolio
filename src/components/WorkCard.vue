@@ -46,7 +46,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       <div class="work-link" v-for="(link, index) in item.links" :key=index>
         <a :href="link.link">{{ link.link_name }}</a>
       </div>
-    </div>>
+    </div>
   </section>
 </template>
 
