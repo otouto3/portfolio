@@ -35,9 +35,12 @@ const routes = [
     name: 'contact',
     component: Contact
   },
-  { path: '*',
+  { path: '/404',
     name: 'not_found',
     component: NotFound,
+  },
+  { path: '*',
+    redirect: '/404'
   },
 ]
 
