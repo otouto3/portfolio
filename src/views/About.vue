@@ -1,7 +1,6 @@
 <template>
   <div class="about">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <h3> {{ name }} </h3>
     <img src="@/assets/img/purin.png" />
     <div class="content" v-for="(content, index) in contents" :key=index>
       <p> {{ content.value }} </p>
