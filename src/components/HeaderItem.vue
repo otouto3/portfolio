@@ -6,8 +6,9 @@
         <li><router-link id="home-nav" to="/" exact>Home</router-link></li>
         <li><router-link id="about-nav" to="/about">About</router-link></li>
         <li><router-link id="works-nav" to="/works">Works</router-link></li>
-        <li><router-link id="blog-nav" to="/blog">Blog</router-link></li>
+        <li><a id="blog-nav" href="https://otoutoblog.com">Blog</a></li>
         <li><router-link id="contact-nav" to="/contact">Contact</router-link></li>
+
       </ul>
     </nav>
   </header>
