@@ -45,7 +45,7 @@ export default {
           ],
           links: [
             {
-             link: '',
+             link: 'https://otoutoblog.com/unity-mygame',
              link_name: 'Blog'
             },
           ],
