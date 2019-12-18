@@ -50,6 +50,21 @@ export default {
             },
           ],
         },
+        {
+          img_path: require('@/assets/img/after_tissue_infer_id1.png'),
+          title: 'ゴミひろいロボットその１ OBJECT DECTION',
+          text: 'ゴミ拾いロボットを目指して,まずは第一段階としてPytorchでティッシュの物体検出を行いました。',
+          font_awesome: [
+            { value: ["fab", "python"] },
+          ],
+          devicon: [],
+          links: [
+            {
+             link: 'https://otoutoblog.com/tisuue-object-detection',
+             link_name: 'Blog'
+            },
+          ],
+        },
       ]
     }
   }
