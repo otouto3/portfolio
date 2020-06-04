@@ -5,74 +5,87 @@
 </template>
 
 <script>
-
-import WorkCard from '@/components/WorkCard'
+import WorkCard from "@/components/WorkCard";
 
 export default {
-  name: 'works',
+  name: "works",
   components: {
     WorkCard
   },
-  data () {
+  data() {
     return {
       works: [
         {
-          img_path: require('@/static/portfolio.png'),
-          title: 'Portfolio Syte',
-          text: 'ポートフォリオサイト（ここのサイト）です。SPAを体感してみたくVue.jsを使って製作しました。レスポンシブデザインにしています。',
+          img_path: require("@/static/portfolio.png"),
+          title: "Portfolio Syte",
+          text:
+            "ポートフォリオサイト（ここのサイト）です。SPAを体感してみたくVue.jsを使って製作しました。レスポンシブデザインにしています。",
           font_awesome: [
             //githubのアイコンがあったらリンクを飛ばす
             //ブログのアイコンがあったらリンクを飛ばす
             { value: ["fab", "vuejs"] },
             { value: ["fab", "html5"] },
             { value: ["fab", "sass"] },
-            { value: ["fab", "github"] },
+            { value: ["fab", "github"] }
           ],
           links: [
             {
-             link: 'https://github.com/otouto3/portfolio',
-             link_name: 'GitHub'
-            },
-          ],
+              link: "https://github.com/otouto3/portfolio",
+              link_name: "GitHub"
+            }
+          ]
         },
         {
-          img_path: require('@/static/unity_game.png'),
-          title: '2Dアクションゲーム',
-          text: '簡単な操作で遊べる2DアクションゲームをUnityとC#で作りました。絵や音楽も自分で作りました。ステージを増やしてup予定です。',
+          img_path: require("@/static/unity_game.png"),
+          title: "2Dアクションゲーム",
+          text:
+            "簡単な操作で遊べる2DアクションゲームをUnityとC#で作りました。絵や音楽も自分で作りました。ステージを増やしてup予定です。",
           font_awesome: [],
-          devicon: [
-            { value: ["devicons devicons-unity_small"]},
-          ],
+          devicon: [{ value: ["devicons devicons-unity_small"] }],
           links: [
             {
-             link: 'https://otoutoblog.com/unity-mygame',
-             link_name: 'Blog'
-            },
-          ],
+              link: "https://otoutoblog.com/unity-mygame",
+              link_name: "Blog"
+            }
+          ]
         },
         {
-          img_path: require('@/assets/img/after_tissue_infer_id1.png'),
-          title: 'ゴミひろいロボットその１ OBJECT DECTION',
-          text: 'ゴミ拾いロボットを目指して,まずは第一段階としてPytorchでティッシュの物体検出を行いました。',
-          font_awesome: [
-            { value: ["fab", "python"] },
-          ],
+          img_path: require("@/assets/img/after_tissue_infer_id1.png"),
+          title: "ゴミひろいロボットその１ OBJECT DECTION",
+          text:
+            "ゴミ拾いロボットを目指して,まずは第一段階としてPytorchでティッシュの物体検出を行いました。",
+          font_awesome: [{ value: ["fab", "python"] }],
           devicon: [],
           links: [
             {
-             link: 'https://otoutoblog.com/tisuue-object-detection',
-             link_name: 'Blog'
-            },
-          ],
+              link: "https://otoutoblog.com/tisuue-object-detection",
+              link_name: "Blog"
+            }
+          ]
         },
+        {
+          img_path: require("@/assets/gif/TodoAppForGithub.gif"),
+          title: "Todo App",
+          text:
+            "Flutterを使ってTodoAppを作成しました。DBの勉強も兼ねてSQLiteを使いました。ポップなデザインに拘りました。",
+          font_awesome: [
+            { value: ["fas", "database"] },
+            { value: ["fab", "github"] }
+          ],
+          links: [
+            {
+              link: "https://github.com/otouto3/flutter-todo-app",
+              link_name: "GitHub"
+            }
+          ]
+        }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
 .works {
   padding-top: 50px;
 }
