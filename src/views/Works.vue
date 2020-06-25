@@ -65,9 +65,9 @@ export default {
         },
         {
           img_path: require("@/assets/gif/TodoAppForGithub.gif"),
-          title: "Todo App",
+          title: "Todoアプリ",
           text:
-            "Flutterを使ってTodoAppを作成しました。DBの勉強も兼ねてSQLiteを使いました。ポップなデザインに拘りました。",
+            "Flutterを使ってTodoアプリを作成しました。DBの勉強も兼ねてSQLiteを使いました。ポップなデザインに拘りました。",
           font_awesome: [
             { value: ["fas", "database"] },
             { value: ["fab", "github"] }
