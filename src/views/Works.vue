@@ -83,7 +83,10 @@ export default {
           img_path: require("@/assets/img/signupWithConfirm.png"),
           title: "dailyUI",
           text: "デザインやUIの知識をつけるために始めました。",
-          font_awesome: [{ value: ["fab", "github"] }],
+          font_awesome: [
+            { value: ["fab", "adobe"] },
+            { value: ["fab", "github"] }
+          ],
           links: [
             {
               link: "https://github.com/otouto3/dailyUI",
