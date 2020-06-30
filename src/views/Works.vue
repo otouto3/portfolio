@@ -81,8 +81,9 @@ export default {
         },
         {
           img_path: require("@/assets/img/signupWithConfirm.png"),
-          title: "dailyUI",
-          text: "デザインやUIの知識をつけるために始めました。",
+          title: "DailyUI",
+          text:
+            "デザインやUIの知識をつけるために、DailyUIというUIの100本ノックを始めました。Adobe Illustratorなどを使って作成しています。",
           font_awesome: [
             { value: ["fab", "adobe"] },
             { value: ["fab", "github"] }
