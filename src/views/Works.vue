@@ -80,7 +80,7 @@ export default {
           ]
         },
         {
-          img_path: require("@/assets/img/signupWithConfirm.png"),
+          img_path: require("@/assets/img/DailyUI_logo2.png"),
           title: "DailyUI",
           text:
             "デザインやUIの知識をつけるために、DailyUIというUIの100本ノックを始めました。Adobe Illustratorなどを使って作成しています。",
