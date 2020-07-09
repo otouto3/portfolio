@@ -94,6 +94,20 @@ export default {
               link_name: "GitHub"
             }
           ]
+        },
+        {
+          img_path: require("@/assets/gif/telloeduDrone.gif"),
+          title: "Tello EDU Drone",
+          text:
+            "トイドローンのTello EDUを操作するプログラムをPythonで作成しました。物体追跡（カービィ）をする機能をプログラムしました。",
+          font_awesome: [{ value: ["fab", "python"] }],
+          links: [
+            {
+              link:
+                "https://otoutoblog.com/tello-edu%e3%81%a7%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0",
+              link_name: "Blog"
+            }
+          ]
         }
       ]
     };
