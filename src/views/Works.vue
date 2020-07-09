@@ -36,7 +36,7 @@ export default {
           ]
         },
         {
-          img_path: require("@/static/unity_game.png"),
+          img_path: require("@/assets/gif/game.gif"),
           title: "2Dアクションゲーム",
           text:
             "簡単な操作で遊べる2DアクションゲームをUnityとC#で作りました。絵や音楽も自分で作りました。ステージを増やしてup予定です。",
